@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{961726CE-F461-4F10-8199-00844B4884B3}</ProjectGuid>
+    <ProjectGuid>{7E96850C-F61D-451E-B621-20DD903A9A7B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AirSystem</RootNamespace>
     <AssemblyName>AirSystem</AssemblyName>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,9 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Idioma.cs" />
     <Compile Include="Models\Usuario.cs" />
-    <Compile Include="Repositories\UsuarioRepository.cs" />
-    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Repositories\UsuariosRepository.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Views\frmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,8 +65,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ListarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ListarUsuarios.Designer.cs">
+      <DependentUpon>ListarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HomeAdm.Designer.cs">
+      <DependentUpon>HomeAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HomeUsuario.Designer.cs">
+      <DependentUpon>HomeUsuario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\frmCadastro.en.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCadastro.fr.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCadastro.pt.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmLogin.en.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmLogin.pt.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -79,6 +114,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ListarUsuarios.resx">
+      <DependentUpon>ListarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HomeAdm.resx">
+      <DependentUpon>HomeAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HomeUsuario.resx">
+      <DependentUpon>HomeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,8 +140,10 @@
     <None Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\umnomeai.png" />
+    <None Include="Resources\companhia.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\aviao.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

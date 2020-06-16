@@ -28,259 +28,184 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
             this.lblNome = new System.Windows.Forms.Label();
             this.lblEndereco = new System.Windows.Forms.Label();
-            this.lblDataNascimento = new System.Windows.Forms.Label();
-            this.tbxNome = new System.Windows.Forms.TextBox();
-            this.tbxSobrenome = new System.Windows.Forms.TextBox();
-            this.tbxEnderco = new System.Windows.Forms.TextBox();
-            this.dateTimePickerNascimento = new System.Windows.Forms.DateTimePicker();
-            this.tbxConfirmar = new System.Windows.Forms.TextBox();
-            this.lblSobrenome = new System.Windows.Forms.Label();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblNascimento = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
-            this.lblConfirmar = new System.Windows.Forms.Label();
-            this.tbxSenha = new System.Windows.Forms.TextBox();
-            this.tbxUsuario = new System.Windows.Forms.TextBox();
-            this.tbxNumero = new System.Windows.Forms.TextBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.lblFoto = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblConfirmSenha = new System.Windows.Forms.Label();
+            this.txtboxNome = new System.Windows.Forms.TextBox();
+            this.txtboxSobrenome = new System.Windows.Forms.TextBox();
+            this.txtboxEndereco = new System.Windows.Forms.TextBox();
+            this.txtboxNumero = new System.Windows.Forms.TextBox();
+            this.txtboxUsuario = new System.Windows.Forms.TextBox();
+            this.txtboxSenha = new System.Windows.Forms.TextBox();
+            this.txtboxConfirmSenha = new System.Windows.Forms.TextBox();
+            this.dataNascimento = new System.Windows.Forms.DateTimePicker();
+            this.checkAdm = new System.Windows.Forms.CheckBox();
             this.btnSelecionar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBoxAdm = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.picUsuario = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(50, 48);
+            resources.ApplyResources(this.lblNome, "lblNome");
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(35, 13);
-            this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Nome";
-            this.lblNome.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblEndereco
             // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(50, 104);
+            resources.ApplyResources(this.lblEndereco, "lblEndereco");
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(53, 13);
-            this.lblEndereco.TabIndex = 2;
-            this.lblEndereco.Text = "Endereço";
             // 
-            // lblDataNascimento
+            // lblNascimento
             // 
-            this.lblDataNascimento.AutoSize = true;
-            this.lblDataNascimento.Location = new System.Drawing.Point(50, 167);
-            this.lblDataNascimento.Name = "lblDataNascimento";
-            this.lblDataNascimento.Size = new System.Drawing.Size(89, 13);
-            this.lblDataNascimento.TabIndex = 3;
-            this.lblDataNascimento.Text = "Data Nascimento";
-            // 
-            // tbxNome
-            // 
-            this.tbxNome.Location = new System.Drawing.Point(109, 45);
-            this.tbxNome.Name = "tbxNome";
-            this.tbxNome.Size = new System.Drawing.Size(100, 20);
-            this.tbxNome.TabIndex = 4;
-            this.tbxNome.TextChanged += new System.EventHandler(this.tbxNome_TextChanged);
-            // 
-            // tbxSobrenome
-            // 
-            this.tbxSobrenome.Location = new System.Drawing.Point(311, 45);
-            this.tbxSobrenome.Name = "tbxSobrenome";
-            this.tbxSobrenome.Size = new System.Drawing.Size(100, 20);
-            this.tbxSobrenome.TabIndex = 5;
-            this.tbxSobrenome.TextChanged += new System.EventHandler(this.tbxSobrenome_TextChanged);
-            // 
-            // tbxEnderco
-            // 
-            this.tbxEnderco.Location = new System.Drawing.Point(109, 101);
-            this.tbxEnderco.Name = "tbxEnderco";
-            this.tbxEnderco.Size = new System.Drawing.Size(100, 20);
-            this.tbxEnderco.TabIndex = 6;
-            this.tbxEnderco.TextChanged += new System.EventHandler(this.tbxEnderco_TextChanged);
-            // 
-            // dateTimePickerNascimento
-            // 
-            this.dateTimePickerNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerNascimento.Location = new System.Drawing.Point(156, 167);
-            this.dateTimePickerNascimento.Name = "dateTimePickerNascimento";
-            this.dateTimePickerNascimento.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePickerNascimento.TabIndex = 7;
-            this.dateTimePickerNascimento.ValueChanged += new System.EventHandler(this.dateTimePickerNascimento_ValueChanged);
-            // 
-            // tbxConfirmar
-            // 
-            this.tbxConfirmar.Location = new System.Drawing.Point(156, 326);
-            this.tbxConfirmar.Name = "tbxConfirmar";
-            this.tbxConfirmar.Size = new System.Drawing.Size(100, 20);
-            this.tbxConfirmar.TabIndex = 8;
-            this.tbxConfirmar.TextChanged += new System.EventHandler(this.tbxConfirmar_TextChanged);
-            // 
-            // lblSobrenome
-            // 
-            this.lblSobrenome.AutoSize = true;
-            this.lblSobrenome.Location = new System.Drawing.Point(244, 48);
-            this.lblSobrenome.Name = "lblSobrenome";
-            this.lblSobrenome.Size = new System.Drawing.Size(61, 13);
-            this.lblSobrenome.TabIndex = 9;
-            this.lblSobrenome.Text = "Sobrenome";
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(244, 104);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(19, 13);
-            this.lblNumero.TabIndex = 10;
-            this.lblNumero.Text = "Nº";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(50, 224);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
-            this.lblUsuario.TabIndex = 11;
-            this.lblUsuario.Text = "Usuario";
+            resources.ApplyResources(this.lblNascimento, "lblNascimento");
+            this.lblNascimento.Name = "lblNascimento";
             // 
             // lblSenha
             // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(50, 278);
+            resources.ApplyResources(this.lblSenha, "lblSenha");
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(38, 13);
-            this.lblSenha.TabIndex = 12;
-            this.lblSenha.Text = "Senha";
             // 
-            // lblConfirmar
+            // lblUsuario
             // 
-            this.lblConfirmar.AutoSize = true;
-            this.lblConfirmar.Location = new System.Drawing.Point(50, 329);
-            this.lblConfirmar.Name = "lblConfirmar";
-            this.lblConfirmar.Size = new System.Drawing.Size(83, 13);
-            this.lblConfirmar.TabIndex = 13;
-            this.lblConfirmar.Text = "Confirmar senha";
-            this.lblConfirmar.Click += new System.EventHandler(this.label8_Click);
+            resources.ApplyResources(this.lblUsuario, "lblUsuario");
+            this.lblUsuario.Name = "lblUsuario";
             // 
-            // tbxSenha
+            // lblConfirmSenha
             // 
-            this.tbxSenha.Location = new System.Drawing.Point(109, 271);
-            this.tbxSenha.Name = "tbxSenha";
-            this.tbxSenha.Size = new System.Drawing.Size(100, 20);
-            this.tbxSenha.TabIndex = 14;
-            this.tbxSenha.TextChanged += new System.EventHandler(this.tbxSenha_TextChanged);
+            resources.ApplyResources(this.lblConfirmSenha, "lblConfirmSenha");
+            this.lblConfirmSenha.Name = "lblConfirmSenha";
             // 
-            // tbxUsuario
+            // txtboxNome
             // 
-            this.tbxUsuario.Location = new System.Drawing.Point(109, 221);
-            this.tbxUsuario.Name = "tbxUsuario";
-            this.tbxUsuario.Size = new System.Drawing.Size(100, 20);
-            this.tbxUsuario.TabIndex = 15;
-            this.tbxUsuario.TextChanged += new System.EventHandler(this.tbxUsuario_TextChanged);
+            this.txtboxNome.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxNome, "txtboxNome");
+            this.txtboxNome.Name = "txtboxNome";
+            this.txtboxNome.TextChanged += new System.EventHandler(this.txtboxNome_TextChanged);
+            this.txtboxNome.Enter += new System.EventHandler(this.txtboxNome_Enter);
+            this.txtboxNome.Leave += new System.EventHandler(this.txtboxNome_Leave);
             // 
-            // tbxNumero
+            // txtboxSobrenome
             // 
-            this.tbxNumero.Location = new System.Drawing.Point(311, 104);
-            this.tbxNumero.Name = "tbxNumero";
-            this.tbxNumero.Size = new System.Drawing.Size(100, 20);
-            this.tbxNumero.TabIndex = 16;
-            this.tbxNumero.TextChanged += new System.EventHandler(this.tbxNumero_TextChanged);
+            this.txtboxSobrenome.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxSobrenome, "txtboxSobrenome");
+            this.txtboxSobrenome.Name = "txtboxSobrenome";
+            this.txtboxSobrenome.Enter += new System.EventHandler(this.txtboxSobrenome_Enter);
+            this.txtboxSobrenome.Leave += new System.EventHandler(this.txtboxSobrenome_Leave);
             // 
-            // btnCadastrar
+            // txtboxEndereco
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(336, 404);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrar.TabIndex = 17;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.txtboxEndereco.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxEndereco, "txtboxEndereco");
+            this.txtboxEndereco.Name = "txtboxEndereco";
+            this.txtboxEndereco.Enter += new System.EventHandler(this.txtboxEndereco_Enter);
+            this.txtboxEndereco.Leave += new System.EventHandler(this.txtboxEndereco_Leave);
             // 
-            // lblFoto
+            // txtboxNumero
             // 
-            this.lblFoto.AutoSize = true;
-            this.lblFoto.Location = new System.Drawing.Point(463, 45);
-            this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(28, 13);
-            this.lblFoto.TabIndex = 19;
-            this.lblFoto.Text = "Foto";
+            this.txtboxNumero.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxNumero, "txtboxNumero");
+            this.txtboxNumero.Name = "txtboxNumero";
+            this.txtboxNumero.Enter += new System.EventHandler(this.txtboxNumero_Enter);
+            this.txtboxNumero.Leave += new System.EventHandler(this.txtboxNumero_Leave);
+            // 
+            // txtboxUsuario
+            // 
+            this.txtboxUsuario.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxUsuario, "txtboxUsuario");
+            this.txtboxUsuario.Name = "txtboxUsuario";
+            this.txtboxUsuario.Enter += new System.EventHandler(this.txtboxUsuario_Enter);
+            this.txtboxUsuario.Leave += new System.EventHandler(this.txtboxUsuario_Leave);
+            // 
+            // txtboxSenha
+            // 
+            this.txtboxSenha.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxSenha, "txtboxSenha");
+            this.txtboxSenha.Name = "txtboxSenha";
+            this.txtboxSenha.Enter += new System.EventHandler(this.txtboxSenha_Enter);
+            this.txtboxSenha.Leave += new System.EventHandler(this.txtboxSenha_Leave);
+            // 
+            // txtboxConfirmSenha
+            // 
+            this.txtboxConfirmSenha.ForeColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.txtboxConfirmSenha, "txtboxConfirmSenha");
+            this.txtboxConfirmSenha.Name = "txtboxConfirmSenha";
+            this.txtboxConfirmSenha.Enter += new System.EventHandler(this.txtboxConfirmSenha_Enter);
+            this.txtboxConfirmSenha.Leave += new System.EventHandler(this.txtboxConfirmSenha_Leave);
+            // 
+            // dataNascimento
+            // 
+            this.dataNascimento.CalendarTitleForeColor = System.Drawing.Color.Silver;
+            this.dataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dataNascimento, "dataNascimento");
+            this.dataNascimento.Name = "dataNascimento";
+            this.dataNascimento.Value = new System.DateTime(2020, 6, 14, 0, 0, 0, 0);
+            // 
+            // checkAdm
+            // 
+            resources.ApplyResources(this.checkAdm, "checkAdm");
+            this.checkAdm.Name = "checkAdm";
+            this.checkAdm.UseVisualStyleBackColor = true;
+            this.checkAdm.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // btnSelecionar
             // 
-            this.btnSelecionar.Location = new System.Drawing.Point(603, 48);
+            resources.ApplyResources(this.btnSelecionar, "btnSelecionar");
             this.btnSelecionar.Name = "btnSelecionar";
-            this.btnSelecionar.Size = new System.Drawing.Size(75, 23);
-            this.btnSelecionar.TabIndex = 20;
-            this.btnSelecionar.Text = "Alterar";
             this.btnSelecionar.UseVisualStyleBackColor = true;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(603, 77);
+            resources.ApplyResources(this.btnDeletar, "btnDeletar");
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletar.TabIndex = 21;
-            this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = true;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
-            // pictureBox1
+            // btnCadastrar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(497, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 73);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            resources.ApplyResources(this.btnCadastrar, "btnCadastrar");
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // checkBoxAdm
+            // picUsuario
             // 
-            this.checkBoxAdm.AutoSize = true;
-            this.checkBoxAdm.Location = new System.Drawing.Point(497, 152);
-            this.checkBoxAdm.Name = "checkBoxAdm";
-            this.checkBoxAdm.Size = new System.Drawing.Size(47, 17);
-            this.checkBoxAdm.TabIndex = 23;
-            this.checkBoxAdm.Text = "Adm";
-            this.checkBoxAdm.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.picUsuario, "picUsuario");
+            this.picUsuario.Name = "picUsuario";
+            this.picUsuario.TabStop = false;
             // 
             // frmCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 450);
-            this.Controls.Add(this.checkBoxAdm);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnSelecionar);
-            this.Controls.Add(this.lblFoto);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.tbxNumero);
-            this.Controls.Add(this.tbxUsuario);
-            this.Controls.Add(this.tbxSenha);
-            this.Controls.Add(this.lblConfirmar);
-            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.picUsuario);
+            this.Controls.Add(this.checkAdm);
+            this.Controls.Add(this.dataNascimento);
+            this.Controls.Add(this.txtboxConfirmSenha);
+            this.Controls.Add(this.txtboxSenha);
+            this.Controls.Add(this.txtboxUsuario);
+            this.Controls.Add(this.txtboxNumero);
+            this.Controls.Add(this.txtboxEndereco);
+            this.Controls.Add(this.txtboxSobrenome);
+            this.Controls.Add(this.txtboxNome);
+            this.Controls.Add(this.lblConfirmSenha);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.lblNumero);
-            this.Controls.Add(this.lblSobrenome);
-            this.Controls.Add(this.tbxConfirmar);
-            this.Controls.Add(this.dateTimePickerNascimento);
-            this.Controls.Add(this.tbxEnderco);
-            this.Controls.Add(this.tbxSobrenome);
-            this.Controls.Add(this.tbxNome);
-            this.Controls.Add(this.lblDataNascimento);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.lblNascimento);
             this.Controls.Add(this.lblEndereco);
             this.Controls.Add(this.lblNome);
             this.Name = "frmCadastro";
-            this.Text = "Cadastro - AirSystem";
             this.Load += new System.EventHandler(this.frmCadastro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,25 +215,22 @@
 
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.Label lblDataNascimento;
-        private System.Windows.Forms.TextBox tbxNome;
-        private System.Windows.Forms.TextBox tbxSobrenome;
-        private System.Windows.Forms.TextBox tbxEnderco;
-        private System.Windows.Forms.DateTimePicker dateTimePickerNascimento;
-        private System.Windows.Forms.TextBox tbxConfirmar;
-        private System.Windows.Forms.Label lblSobrenome;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblNascimento;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.Label lblConfirmar;
-        private System.Windows.Forms.TextBox tbxSenha;
-        private System.Windows.Forms.TextBox tbxUsuario;
-        private System.Windows.Forms.TextBox tbxNumero;
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Label lblFoto;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblConfirmSenha;
+        private System.Windows.Forms.TextBox txtboxNome;
+        private System.Windows.Forms.TextBox txtboxSobrenome;
+        private System.Windows.Forms.TextBox txtboxEndereco;
+        private System.Windows.Forms.TextBox txtboxNumero;
+        private System.Windows.Forms.TextBox txtboxUsuario;
+        private System.Windows.Forms.TextBox txtboxSenha;
+        private System.Windows.Forms.TextBox txtboxConfirmSenha;
+        private System.Windows.Forms.DateTimePicker dataNascimento;
+        private System.Windows.Forms.CheckBox checkAdm;
+        private System.Windows.Forms.PictureBox picUsuario;
         private System.Windows.Forms.Button btnSelecionar;
         private System.Windows.Forms.Button btnDeletar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBoxAdm;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }
